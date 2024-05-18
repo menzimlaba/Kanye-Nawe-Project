@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <title>One of The Best IT Company</title>
+</head>
+<body>
+  <header class="container-fluid">
+    <div id="top" class="top bg-dark text-light">
+      <div class="container">
+
+        <div class="row py-1">
+          <div class="col-12 col-lg-6">
+            <p class="m-0 "><b>Email: Contact@gmail.com</b></p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="text-lg-end m-0"><b>Phone: +076 1212 12123</b></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- end top -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger ">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img width="55px" src="{{ url_for('static', filename='img/logo.jpg') }}" class="rounded-8" alt="Kanye Nawe Funeral Parlour">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#team">Our Team</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle" href="#plans" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Funeral Plans
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#burial">Burial Services</a></li>
+                <li><a class="dropdown-item" href="#cremation">Cremation Services</a></li>
+                <li><a class="dropdown-item" href="#memorials">Memorial Services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="#" class="me-2"><img src="{{ url_for('static', filename='img/facebook.png') }}" alt="Facebook"></a>
+            <a href="#" class="me-2"><img src="{{ url_for('static', filename='img/twitter.png') }}" alt="Twitter"></a>
+            <a href="#" class=""><img src="{{ url_for('static', filename='img/youtube.png') }}" alt="Youtube"></a>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+
+  </header>
+
+
+  <section class="container-fluid">
+    <div id="carouselExampleIndicators" class="carousel slide h-25 " data-bs-ride="carousel">
+      <div class="carousel-indicators d-none d-lg-flex">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ url_for('static', filename='img/picx (3).jpg') }}" class="d-block w-100 h-25  " alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+         <img src="{{ url_for('static', filename='img/this (1).jpg') }}" class="d-block w-100" alt="Slide 2">
+       </div>
+       <div class="carousel-item">
+         <img src="{{ url_for('static', filename='img/this (2).jpg') }}" class="d-block w-100" alt="Slide 3">
+       </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<section id="about" class="container-fluid py-5">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <img class="border border-light img-fluid" src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Funeral Parlour Image">
+      </div>
+      <div class="col-12 col-lg-7">
+        <h1 class="display-6"><b>About Kanye Nawe Funeral Parlour</b></h1>
+        <p>
+          Kanye Nawe Funeral Parlour is dedicated to providing compassionate and dignified funeral services to families during their time of loss. With years of experience in the funeral industry, we understand the importance of honoring the memory of your loved ones.
+        </p>
+        
+        <div class="py-1">
+          <h3 class="display-6">Follow Us</h3>
+          <a href="#" class="me-2"><img src="{{ url_for('static', filename='img/facebook.png') }}" alt="Facebook"></a>
+          
+          <a href="#" class="me-2"><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="LinkedIn"></a>
+          <a href="#" class=""><img src="{{ url_for('static', filename='img/youtube.png') }}" alt="YouTube"></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="service" class="bg-light container-fluid">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="display-6"><b>Kanye Nawe Funeral Parlour</b></h2>
+        <p>Welcome to Kanye Nawe Funeral Parlour, where we provide dignified and compassionate funeral services to honor the lives of your loved ones.</p>
+      </div>
+
+      <div class="col-12 text-center">
+        <img src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+        <img src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+        <img src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+        <img src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+        <img src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      </div>
+    </div>
+
+    <div class="row py-5">
+
+      <div class="col-md-6 col-12 col-lg-3 mb-4">
+        <div class="border p-3">
+          <div class="text-center">
+            <img width="128px" src="{{ url_for('static', filename='img/service.png') }}" alt="">
+          </div>
+          <div class="text-center">
+            <h5 class="text-uppercase py-2">Coffin Design</h5>
+            <p>Our skilled artisans create custom-designed coffins tailored to reflect the unique personality and spirit of your beloved departed.</p>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-dark">Get a Quote</button>
+            <form action="/pricing" method="POST">
+              <button  class="btn btn-outline-dark">Pay online</button>
+          </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-12 col-lg-3 mb-4">
+        <div class="border p-3">
+          <div class="text-center">
+            <img width="128px" src="{{ url_for('static', filename='img/candle.png') }}" alt="">
+          </div>
+          <div class="text-center">
+            <h5 class="text-uppercase py-2">Funeral Arrangements</h5>
+            <p>From selecting floral arrangements to coordinating funeral processions, our dedicated team ensures every aspect of the funeral is conducted with reverence and care.</p>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-dark">Get a Quote</button>
+            <form action="/pricing" method="POST">
+              <button data-bs-target="#payModal" class="btn btn-outline-dark">Pay online</button>
+          </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-12 col-lg-3 mb-4">
+        <div class="border p-3">
+          <div class="text-center">
+            <img width="128px" src="{{ url_for('static', filename='img/coffin.png') }}" alt="">
+          </div>
+          <div class="text-center">
+            <h5 class="text-uppercase py-2">Memorial Services</h5>
+            <p>Our compassionate staff assists in planning and conducting memorial services that honor and celebrate the life of your loved one.</p>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-dark me-2">Get a Quote</button>
+<form action="/pricing" method="POST">
+    <button data-bs-target="#payModal" class="btn btn-outline-dark">Pay online</button>
+</form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-12 col-lg-3 mb-4">
+        <div class="border p-3">
+          <div class="text-center">
+            <img width="128px" src="{{ url_for('static', filename='img/funeral (1).png') }}" alt="">
+          </div>
+          <div class="text-center">
+            <h5 class="text-uppercase py-2">Grief Support</h5>
+            <p>Our caring team provides guidance and support to help you navigate through the grieving process during this difficult time.</p>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-dark">Get a Quote</button>
+            <form action="/pricing" method="POST">
+              <button data-bs-target="#payModal" class="btn btn-outline-dark">Pay online</button>
+          </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="team" class="container py-3">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2 class="display-6"><b>Meet our Team</b></h2>
+      <p class="">Meet the dedicated team behind Kanye Nawe Funeral Parlour.</p>
+    </div>
+
+    <div class="col-12 text-center">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+    </div>
+  </div>
+
+  <div class="row pt-5">
+    <div class="col-12 col-lg-10 offset-lg-1">
+      <div class="row">
+
+        <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0">
+          <div class="card" >
+            <img class="card-img-top" src="{{ url_for('static', filename='img/sbo.jpg') }}" alt="Card image cap">
+            <div class="card-body">
+             <h4 class="py-2 pb-0"><i>Sbongakonke</i></h4>
+             <h5>Funeral Service Manager</h5>
+             <div class="py-3">
+              <a class="btn   text-light" href=""><img src="{{ url_for('static', filename='img/youtube.png') }}" alt=""></a>
+              <a class="btn   text-light" href=""><img src="{{ url_for('static', filename='img/twitter.png') }}" alt=""></a>
+              <a class="btn   text-light" href=""><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt=""></a>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0">
+        <div class="card" >
+          <img class="card-img-top" src="{{ url_for('static', filename='img/louis.jpg') }}" alt="Card image cap">
+          <div class="card-body">
+           <h4 class="py-2 pb-0"><i>Louis</i></h4>
+           <h5>Funeral Director</h5>
+           <div class="py-3">
+             <a class="btn   text-light" href=""><img src="{{ url_for('static', filename='img/youtube.png') }}" alt=""></a>
+             <a class="btn   text-light" href=""><img src="{{ url_for('static', filename='img/twitter.png') }}" alt=""></a>
+             <a class="btn   text-light" href=""><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt=""></a>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0">
+      <div class="card" >
+        <img class="card-img-top" src="{{ url_for('static', filename='img/ndu.jpg') }}" alt="Card image cap">
+        <div class="card-body">
+         <h4 class="py-2 pb-0"><i>Ndumiso</i></h4>
+         <h5>Funeral Service Coordinator</h5>
+         <div class="py-3">
+           <a class="btn   text-light" href=""><img src="{{ url_for('static', filename='img/youtube.png') }}" alt=""></a>
+           <a class="btn   text-light" href=""><img src="{{ url_for('static', filename='img/twitter.png') }}" alt=""></a>
+           <a class="btn   text-light" href=""><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt=""></a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="container-fluid bg-light py-3">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2 class="display-6"><b>Client Testimonials</b></h2>
+      <p>See what our clients have to say about their experience with Kanye Nawe Funeral Parlour.</p>
+    </div>
+
+    <div class="col-12 text-center">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+    </div>
+  </div>
+
+  <div class="row pt-5">
+    <div class="col-12">
+
+      <blockquote class="blockquote text-center">
+        <img class="rounded-circle" src="img/client-1.png" alt="">
+        <p class="mb-0">"The compassionate and professional service provided by Kanye Nawe Funeral Parlour made a difficult time much easier for my family. Highly recommended."</p> <br>
+        <footer class="blockquote-footer">John Doe, Bereaved Client</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+
+<section id="faq" class="container py-3">
+
+
+
+  <div class="row py-5">
+    <div class="col-12 text-center">
+      <h2 class="display-6 "><b>Frequently Asked Questions</b></h2>
+      <p class="">Welcome to Kanye Nawe Funeral Parlour. Here are some common questions about our services.</p>
+    </div>
+
+    <div class="col-12 text-center">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+    </div>
+  </div>
+
+
+  <div class="row">
+
+    <div class="col-12 col-lg-6">
+      <div class="accordion" id="accordion_1">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading_1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1" aria-expanded="true" aria-controls="collapse_1">
+              What services do you offer?
+            </button>
+          </h2>
+          <div id="collapse_1" class="accordion-collapse collapse show" aria-labelledby="heading_1" data-bs-parent="#accordion_1">
+            <div class="accordion-body">
+              <strong>We offer a range of funeral services, including traditional burials, cremations, memorial ceremonies, and pre-planning options. Our compassionate staff is here to support you through every step of the process.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading_2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+              How do I arrange a funeral service?
+            </button>
+          </h2>
+          <div id="collapse_2" class="accordion-collapse collapse" aria-labelledby="heading_2" data-bs-parent="#accordion_1">
+            <div class="accordion-body">
+              <strong>To arrange a funeral service, simply contact our office to speak with one of our caring professionals. We'll guide you through the process, help you make decisions, and ensure that your loved one is honored with dignity and respect.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading_3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+              Do you offer pre-planning services?
+            </button>
+          </h2>
+          <div id="collapse_3" class="accordion-collapse collapse" aria-labelledby="heading_3" data-bs-parent="#accordion_1">
+            <div class="accordion-body">
+              <strong>Yes, we offer pre-planning services to help you make arrangements in advance. Pre-planning allows you to make important decisions ahead of time, easing the burden on your loved ones and ensuring that your wishes are honored.</strong>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <div class="col-12 col-lg-6">
+      <div class="accordion" id="accordion_2">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading_4">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_4" aria-expanded="true" aria-controls="collapse_4">
+              What sets Kanye Nawe Funeral Parlour apart?
+            </button>
+          </h2>
+          <div id="collapse_4" class="accordion-collapse collapse show" aria-labelledby="heading_4" data-bs-parent="#accordion_2">
+            <div class="accordion-body">
+              <strong>At Kanye Nawe Funeral Parlour, we are committed to providing exceptional care and personalized service to each family we serve. Our attention to detail, compassionate staff, and range of offerings set us apart as a leader in the funeral industry.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading_5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+              What is the cost of your services?
+            </button>
+          </h2>
+          <div id="collapse_5" class="accordion-collapse collapse" aria-labelledby="heading_5" data-bs-parent="#accordion_2">
+            <div class="accordion-body">
+              <strong>Our pricing varies depending on the services selected and any additional preferences or requirements. We strive to offer transparent pricing and will work with you to find options that suit your budget and needs.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading_6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_6" aria-expanded="false" aria-controls="collapse_6">
+              How can I contact Kanye Nawe Funeral Parlour?
+            </button>
+          </h2>
+          <div id="collapse_6" class="accordion-collapse collapse" aria-labelledby="heading_6" data-bs-parent="#accordion_2">
+            <div class="accordion-body">
+              <strong>You can reach us by phone at [phone number] or visit our office at [address]. Our dedicated team is available 24/7 to assist you in your time of need.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+</section>
+
+
+
+
+<section id="contact" class="bg-light py-3">
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-12 text-center">
+        <h2 class="display-6 "><b>Contact Us</b></h2>
+        <p class="">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consequuntur!</p>
+      </div>
+      <div class="col-12 text-center">
+        <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+        <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+        <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+        <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+        <img  src="{{ url_for('static', filename='img/star.png') }}" alt="star">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-5 text-center">
+        <img class="img-fluid" src="{{ url_for('static', filename='img/logo.jpg') }}" alt="">
+      </div>
+      <div class="col-12 col-lg-7">
+        <div class="">
+          <form action="/contact" method="post">
+            <div class="form-floating">
+              <input required type="text" class="form-control rounded-0" id="name" name="name" placeholder="Your Full Name">
+              <label for="name">Your Full Name</label>
+            </div>
+            <div class="form-floating mt-3">
+              <input required type="email" class="form-control rounded-0" name="email" placeholder="name@example.com">
+              <label for="email">Email address</label>
+            </div>
+            <div class=" mt-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea required class="form-control rounded-0" placeholder="Leave a comment here" name="message" cols="30" rows="4" ></textarea>
+            </div>
+            <div class="mt-3">
+              <button class="btn btn-danger  w-100 rounded-0" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="py-5 bg-dark text-light">
+  <div class="container">
+    <div class="row pb-5">
+      <div class="col-12 text-center">
+        <a href="#top"><img src="img/top.png" alt=""></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-4 offset-lg-4">
+        <form action="">
+          <div class="input-group mb-3">
+            <input required type="text" class="form-control rounded-0" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2">
+            <button class="btn btn-outline-info" type="submit" id="button-addon2">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row py-4">
+      <div class="col-12 text-center">
+        <a href="" class=""><img src="{{ url_for('static', filename='img/youtube.png') }}" alt=""></a> &nbsp;&nbsp;
+        <a href="" class=""><img src="{{ url_for('static', filename='img/skype.png') }}" alt=""></a> &nbsp;&nbsp;
+        <a href="" class=""><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt=""></a> &nbsp;&nbsp;
+        <a href="" class=""><img src="{{ url_for('static', filename='img/twitter.png') }}" alt=""></a> &nbsp;&nbsp;
+         
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center m-0 text-secondary">CopyRight &copy; </p>
+      </div>
+    </div>
+    <!-- Add contact information here -->
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <p class="mb-0">Contact us at: contact@example.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Address: 123 Street, City, Country</p>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="/quote" method="post">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get a Quote</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <input required type="text" class="form-control" id="name" name="name"placeholder="Your Name">
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input required type="email" class="form-control" name="email" placeholder="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input required type="text" class="form-control" id="phone" name="phone">
+            <label for="phone">Phone Number</label>
+          </div>
+          <select required class="form-select mb-3" id="service" name="service">
+            <option value="0">Select Funeral Services</option>
+            <option value="Traditional Burial">Traditional Burial</option>
+            <option value="Cremation">Cremation</option>
+            <option value="Memorial Ceremony">Memorial Ceremony</option>
+            <option value="Pre-planning">Pre-planning</option>
+            <option value="Other">Other</option>
+          </select>
+          <div >
+            <textarea required name="details" id="details" cols="30" rows="5" placeholder="Additional Details" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div id="pricingModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">PRICING</h4>
+      </div>
+      <div class="modal-body">
+        <!-- Pricing content goes here -->
+        <!-- You can copy the content from the original pricing section -->
+        <div class="col-sm-4 col-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h1>Basic</h1>
+            </div>
+            <div class="panel-body">
+              <p><strong>Funeral Service</strong></p>
+              <p><strong>Memorial Book</strong></p>
+              <p><strong>Basic Casket</strong></p>
+              <p><strong>Graveside Service</strong></p>
+              <p><strong>Transportation</strong></p>
+            </div>
+            <div class="panel-footer">
+              <h3>Starting at R1500</h3>
+              <button class="btn btn-lg">Get Started</button>
+            </div>
+          </div>
+        <div class="container-fluid">
+          <!-- Pricing content goes here -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="payModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="paymentModalLabel">Choose Payment Method</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <!-- Payment method options -->
+              <form action="/selectMethod" method="post">
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard">
+                  <label class="form-check-label" for="creditCard">Credit Card</label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal">
+                  <label class="form-check-label" for="paypal">PayPal</label>
+              </div>
+              <!-- Add more payment options as needed -->
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Proceed</button>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>-->
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script> 
+
+</body>
+</html>
